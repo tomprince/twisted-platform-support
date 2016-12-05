@@ -45,17 +45,17 @@ environment:
       TOXENV: py35-withcov,codecov-publish
 
     # 2.7 wheels
+    - PYTHON_HOME: C:\\Python27
+      PYTHON_VERSION: "2.7"
+      PYTHON_ARCH: "32"
+      TOXENV: py27-wheel
     - PYTHON_HOME: C:\\Python27-x64
       PYTHON_VERSION: "2.7"
       PYTHON_ARCH: "64"
       TOXENV: py27-wheel
-    - PYTHON_HOME: C:\\Python27-x64
-      PYTHON_VERSION: "2.7"
-      PYTHON_ARCH: "32"
-      TOXENV: py27-wheel
 
     # 3.4 wheels
-    - PYTHON_HOME: C:\\PYTHON34-x64
+    - PYTHON_HOME: C:\\PYTHON34
       PYTHON_VERSION: "3.4"
       PYTHON_ARCH: "32"
       TOXENV: py34-wheel
@@ -65,7 +65,7 @@ environment:
       TOXENV: py34-wheel
 
     # 3.5 wheels
-    - PYTHON_HOME: C:\\PYTHON35-x64
+    - PYTHON_HOME: C:\\PYTHON35
       PYTHON_VERSION: "3.5"
       PYTHON_ARCH: "32"
       TOXENV: py35-wheel
