@@ -110,6 +110,9 @@ install:
 test_script:
   - "%CMD_IN_ENV% python -m tox -e %TOXENV%"
 
+artifacts:
+  - path: 'dist/*.whl'
+
 deploy:
   - provider: BinTray
     username: hawkowl
