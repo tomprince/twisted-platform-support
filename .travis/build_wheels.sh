@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e -x
 
+rm -rf /opt/python/cp26-*
+
 # Compile wheels
 for PYBIN in /opt/python/*/bin; do
     ${PYBIN}/pip wheel /io/ -w wheelhouse/
