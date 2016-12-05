@@ -62,3 +62,10 @@ install:
 script:
   - if [[ -n "${TOX_ENV}" ]]; then ./.travis/run.sh; fi
   - if [[ -n "${DOCKER_IMAGE}" ]]; then docker run --rm -v `pwd`:/io $DOCKER_IMAGE $PRE_CMD /io/.travis/build_wheels.sh; fi
+
+deploy:
+  provider: bintray
+  file: .travis/bintray.json
+  user: hawkieowl
+  key:
+    secure: BPCrN7U3+DjgetZc/Uv9WFa5XeXayaYRX1swKaXxqd/LNQkTj3qyE+GIpqNnywADYSEVRe8theTXPPhXx7iotu23k9rZCxGLmfwHRHRU3oeoqFJb7R28OUlu5KxHldgSTyIju8SI0jEp46Pso74XA5FupHeyvTWWPofUNTffSGAnyOE6X/no++qdT+gHFbRSDGkpRAlzArv4YKRJCgB3guT5lDjzc/cHQ5Qd3HeYUdgf5GUzONcYubNHwUB9x7PIhZoxRd8ect6w2j0lXO3B9Pm6dSy8DtORB8BSyYY/DiZ9PxuCC8j6MCeYWMdXkYON6S4+QHy0OuFpZhzbkH+Z554tGL2FbKCwmoLu/txBVI9W83INOCm1XaDCdjbrzQ42Zg3NBn6oEHgiUKZhRgyS9IrYcFhWWhc9PQYhND18G6s9+cwi6NkuSHN/C/JMIkZ4g1432JkLJaK74RJt3vIZkWrWKIrr1OAuce0YADlUB5eqGRLfijk5aUiUDTysbRe7ww0NRBf+bfe+5x3IV6nWeCmh3r3kAAZu3nifA3fd6SeEa2KRBH46JHge0PJItcTgxPIYhlZRYBly/OFleo9edze6Wp0Tzf65AxHcAmc5YaQrgzhDJ5wTYGqch8WWEg8lXmk2L19kjm8MqAxYq/JNZmllpNrc3rfWBHB+kk82Wy8=

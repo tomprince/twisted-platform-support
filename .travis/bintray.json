@@ -1,0 +1,18 @@
+{
+    "package": {
+        "name": "twisted-platform-support",
+        "repo": "twisted-platform-support",
+        "subject": "hawkowl"
+    },
+    "version": {
+        "name": "1"
+    },
+    "files": [
+        {
+            "includePattern": "wheelhouse/(.*)",
+            "uploadPattern": "$1",
+            "matrixParams": {"override": 1}
+        }
+     ],
+    "publish": true
+}
