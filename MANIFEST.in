@@ -1,1 +1,4 @@
+include tox.ini
 include LICENSE
+
+prune .travis
