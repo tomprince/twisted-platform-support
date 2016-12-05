@@ -52,7 +52,7 @@ _iocp_base = "src/twisted_platform_support/_iocp/iocpsupport/"
 _EXTENSIONS = [
     ConditionalExtension(
         "twisted_platform_support._raiser",
-        sources=["src/twisted_platform_support/_raiser.c"],
+        sources=["src/twisted_platform_support/_raiser/raiser.c"],
         condition=lambda _: _isCPython),
 
     ConditionalExtension(
@@ -72,8 +72,8 @@ _EXTENSIONS = [
     ConditionalExtension(
         "twisted_platform_support._portmap",
         sources=["src/twisted_platform_support/_portmap.c"],
-        condition=lambda builder: not _PY3 and
-                                  builder._check_header("rpc/rpc.h")),
+        condition=lambda builder: (not _PY3 and
+                                   builder._check_header("rpc/rpc.h"))),
 ]
 
 
