@@ -12,8 +12,7 @@ sudo: false
 # Test on PR should be execute for all branches and forks.
 branches:
   only:
-  - trunk
-  - /^release-.*$/
+  - master
 
 
 env:
