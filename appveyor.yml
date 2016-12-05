@@ -109,3 +109,16 @@ install:
 
 test_script:
   - "%CMD_IN_ENV% python -m tox -e %TOXENV%"
+
+deploy:
+  - provider: BinTray
+    username: hawkowl
+    api_key:
+      secure: YhWzftbGrX2Ty1+5YYi1ULXCZCIDYSMPK2tSaL74pC0tNPUgVoqF/nX0Sw/7kDd4
+    subject: hawkowl
+    repo: twisted-platform-support
+    package: twisted-platform-support
+    version: 1
+    publish: true
+    override: true
+    explode: true
