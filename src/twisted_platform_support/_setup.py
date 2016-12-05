@@ -50,10 +50,10 @@ _iocp_base = "src/twisted_platform_support/_iocp/iocpsupport/"
 
 # The C extensions used for Twisted.
 _EXTENSIONS = [
-    # ConditionalExtension(
-    #    "twisted_platform_support._raiser.raiser",
-    #    sources=["src/twisted_platform_support/test/raiser.c"],
-    #    condition=lambda _: _isCPython),
+    ConditionalExtension(
+        "twisted_platform_support._raiser",
+        sources=["src/twisted_platform_support/_raiser.c"],
+        condition=lambda _: _isCPython),
 
     ConditionalExtension(
         "twisted_platform_support._iocp",
@@ -69,11 +69,11 @@ _EXTENSIONS = [
         sources=["src/twisted_platform_support/_sendmsg.c"],
         condition=lambda _: not _PY3 and sys.platform != "win32"),
 
-    # ConditionalExtension(
-    #    "twisted_platform_support._portmap",
-    #    sources=["src/twisted_platform_support/_portmap.c"],
-    #    condition=lambda builder: not _PY3 and
-    #                              builder._check_header("rpc/rpc.h")),
+    ConditionalExtension(
+        "twisted_platform_support._portmap",
+        sources=["src/twisted_platform_support/_portmap.c"],
+        condition=lambda builder: not _PY3 and
+                                  builder._check_header("rpc/rpc.h")),
 ]
 
 
