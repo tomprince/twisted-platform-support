@@ -398,8 +398,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__raiser
-#define __PYX_HAVE_API__raiser
+#define __PYX_HAVE___raiser
+#define __PYX_HAVE_API___raiser
 #ifdef _OPENMP
 #include <omp.h>
 #endif /* _OPENMP */
@@ -615,7 +615,7 @@ static const char *__pyx_filename;
 
 
 static const char *__pyx_f[] = {
-  "raiser.pyx",
+  "/raiser.pyx",
 };
 
 /*--- Type declarations ---*/
@@ -784,16 +784,16 @@ static int __Pyx_check_binary_version(void);
 static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
 
 
-/* Module declarations from 'raiser' */
-#define __Pyx_MODULE_NAME "raiser"
-int __pyx_module_is_main_raiser = 0;
+/* Module declarations from '_raiser' */
+#define __Pyx_MODULE_NAME "_raiser"
+int __pyx_module_is_main__raiser = 0;
 
-/* Implementation of 'raiser' */
+/* Implementation of '_raiser' */
 static const char __pyx_k_doc[] = "__doc__";
 static const char __pyx_k_main[] = "__main__";
 static const char __pyx_k_test[] = "__test__";
 static const char __pyx_k_module[] = "__module__";
-static const char __pyx_k_raiser[] = "raiser";
+static const char __pyx_k_raiser[] = "_raiser";
 static const char __pyx_k_prepare[] = "__prepare__";
 static const char __pyx_k_qualname[] = "__qualname__";
 static const char __pyx_k_metaclass[] = "__metaclass__";
@@ -816,7 +816,7 @@ static PyObject *__pyx_n_s_qualname;
 static PyObject *__pyx_n_s_raiseException;
 static PyObject *__pyx_n_s_raiser;
 static PyObject *__pyx_n_s_test;
-static PyObject *__pyx_pf_6raiser_raiseException(CYTHON_UNUSED PyObject *__pyx_self); /* proto */
+static PyObject *__pyx_pf_7_raiser_raiseException(CYTHON_UNUSED PyObject *__pyx_self); /* proto */
 static PyObject *__pyx_tuple_;
 static PyObject *__pyx_codeobj__2;
 
@@ -829,21 +829,21 @@ static PyObject *__pyx_codeobj__2;
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_6raiser_1raiseException(PyObject *__pyx_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static char __pyx_doc_6raiser_raiseException[] = "\n    Raise L{RaiserException}.\n    ";
-static PyMethodDef __pyx_mdef_6raiser_1raiseException = {"raiseException", (PyCFunction)__pyx_pw_6raiser_1raiseException, METH_NOARGS, __pyx_doc_6raiser_raiseException};
-static PyObject *__pyx_pw_6raiser_1raiseException(PyObject *__pyx_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_7_raiser_1raiseException(PyObject *__pyx_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static char __pyx_doc_7_raiser_raiseException[] = "\n    Raise L{RaiserException}.\n    ";
+static PyMethodDef __pyx_mdef_7_raiser_1raiseException = {"raiseException", (PyCFunction)__pyx_pw_7_raiser_1raiseException, METH_NOARGS, __pyx_doc_7_raiser_raiseException};
+static PyObject *__pyx_pw_7_raiser_1raiseException(PyObject *__pyx_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("raiseException (wrapper)", 0);
-  __pyx_r = __pyx_pf_6raiser_raiseException(__pyx_self);
+  __pyx_r = __pyx_pf_7_raiser_raiseException(__pyx_self);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_6raiser_raiseException(CYTHON_UNUSED PyObject *__pyx_self) {
+static PyObject *__pyx_pf_7_raiser_raiseException(CYTHON_UNUSED PyObject *__pyx_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -876,7 +876,7 @@ static PyObject *__pyx_pf_6raiser_raiseException(CYTHON_UNUSED PyObject *__pyx_s
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("raiser.raiseException", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("_raiser.raiseException", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
@@ -894,7 +894,7 @@ static struct PyModuleDef __pyx_moduledef = {
   #else
     PyModuleDef_HEAD_INIT,
   #endif
-    "raiser",
+    "_raiser",
     __pyx_k_A_trivial_extension_that_just_r, /* m_doc */
     -1, /* m_size */
     __pyx_methods /* m_methods */,
@@ -961,11 +961,11 @@ static int __Pyx_InitGlobals(void) {
 }
 
 #if PY_MAJOR_VERSION < 3
-PyMODINIT_FUNC initraiser(void); /*proto*/
-PyMODINIT_FUNC initraiser(void)
+PyMODINIT_FUNC init_raiser(void); /*proto*/
+PyMODINIT_FUNC init_raiser(void)
 #else
-PyMODINIT_FUNC PyInit_raiser(void); /*proto*/
-PyMODINIT_FUNC PyInit_raiser(void)
+PyMODINIT_FUNC PyInit__raiser(void); /*proto*/
+PyMODINIT_FUNC PyInit__raiser(void)
 #endif
 {
   PyObject *__pyx_t_1 = NULL;
@@ -982,7 +982,7 @@ PyMODINIT_FUNC PyInit_raiser(void)
           Py_FatalError("failed to import 'refnanny' module");
   }
   #endif
-  __Pyx_RefNannySetupContext("PyMODINIT_FUNC PyInit_raiser(void)", 0);
+  __Pyx_RefNannySetupContext("PyMODINIT_FUNC PyInit__raiser(void)", 0);
   if (__Pyx_check_binary_version() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   __pyx_empty_tuple = PyTuple_New(0); if (unlikely(!__pyx_empty_tuple)) __PYX_ERR(0, 1, __pyx_L1_error)
   __pyx_empty_bytes = PyBytes_FromStringAndSize("", 0); if (unlikely(!__pyx_empty_bytes)) __PYX_ERR(0, 1, __pyx_L1_error)
@@ -1011,7 +1011,7 @@ PyMODINIT_FUNC PyInit_raiser(void)
   #endif
   /*--- Module creation code ---*/
   #if PY_MAJOR_VERSION < 3
-  __pyx_m = Py_InitModule4("raiser", __pyx_methods, __pyx_k_A_trivial_extension_that_just_r, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
+  __pyx_m = Py_InitModule4("_raiser", __pyx_methods, __pyx_k_A_trivial_extension_that_just_r, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
   #else
   __pyx_m = PyModule_Create(&__pyx_moduledef);
   #endif
@@ -1028,14 +1028,14 @@ PyMODINIT_FUNC PyInit_raiser(void)
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_raiser) {
+  if (__pyx_module_is_main__raiser) {
     if (PyObject_SetAttrString(__pyx_m, "__name__", __pyx_n_s_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "raiser")) {
-      if (unlikely(PyDict_SetItemString(modules, "raiser", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "_raiser")) {
+      if (unlikely(PyDict_SetItemString(modules, "_raiser", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -1086,7 +1086,7 @@ PyMODINIT_FUNC PyInit_raiser(void)
  *     """
  *     Raise L{RaiserException}.
  */
-  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_6raiser_1raiseException, NULL, __pyx_n_s_raiser); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 17, __pyx_L1_error)
+  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_7_raiser_1raiseException, NULL, __pyx_n_s_raiser); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 17, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_raiseException, __pyx_t_1) < 0) __PYX_ERR(0, 17, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -1111,11 +1111,11 @@ PyMODINIT_FUNC PyInit_raiser(void)
   __Pyx_XDECREF(__pyx_t_4);
   if (__pyx_m) {
     if (__pyx_d) {
-      __Pyx_AddTraceback("init raiser", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init _raiser", __pyx_clineno, __pyx_lineno, __pyx_filename);
     }
     Py_DECREF(__pyx_m); __pyx_m = 0;
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init raiser");
+    PyErr_SetString(PyExc_ImportError, "init _raiser");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();

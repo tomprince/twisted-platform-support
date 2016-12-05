@@ -9,7 +9,7 @@ from distutils.core import setup
 from distutils.extension import Extension
 from Cython.Distutils import build_ext
 
-setup(name='raiser',
+setup(name='_raiser',
       ext_modules=[
-          Extension('raiser', ['raiser.pyx'])],
+          Extension('_raiser', ['raiser.pyx'])],
       cmdclass={'build_ext': build_ext})
