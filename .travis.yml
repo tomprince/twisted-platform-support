@@ -61,4 +61,4 @@ install:
 
 script:
   - if [[ -n "${TOX_ENV}" ]]; then ./.travis/run.sh; fi
-  - if [[ -n "${DOCKER_IMAGE}" ]]; then docker run --rm -v `pwd`:/io $DOCKER_IMAGE $PRE_CMD /io/.travis/build-wheels.sh; fi
+  - if [[ -n "${DOCKER_IMAGE}" ]]; then docker run --rm -v `pwd`:/io $DOCKER_IMAGE $PRE_CMD "ls -la /io && /io/.travis/build-wheels.sh"; fi
