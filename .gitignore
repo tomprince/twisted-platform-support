@@ -5,3 +5,5 @@ build/
 _trial_temp*
 *.pyc
 .eggs
+*.so
+*.dll
