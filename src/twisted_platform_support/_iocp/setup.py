@@ -11,9 +11,9 @@ from distutils.core import setup
 from distutils.extension import Extension
 from Cython.Distutils import build_ext
 
-setup(name='iocpsupport',
+setup(name='_iocp',
       ext_modules=[
-          Extension('iocpsupport',
+          Extension('_iocp',
                     ['iocpsupport/iocpsupport.pyx',
                      'iocpsupport/winsock_pointers.c'],
                     libraries=['ws2_32'])],
