@@ -68,12 +68,6 @@ _EXTENSIONS = [
         "twisted_platform_support._sendmsg",
         sources=["src/twisted_platform_support/_sendmsg.c"],
         condition=lambda _: not _PY3 and sys.platform != "win32"),
-
-    ConditionalExtension(
-        "twisted_platform_support._portmap",
-        sources=["src/twisted_platform_support/_portmap.c"],
-        condition=lambda builder: (not _PY3 and
-                                   builder._check_header("rpc/rpc.h"))),
 ]
 
 

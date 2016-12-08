@@ -9,7 +9,7 @@ from setuptools import setup, find_packages
 if __name__ == "__main__":
 
     _setup = {}
-    with open('src/twisted_platform_support/_setup.py') as f:
+    with open('src/_twisted_platform_support/_setup.py') as f:
         exec(f.read(), _setup)
 
 
