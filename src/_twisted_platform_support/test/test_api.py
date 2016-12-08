@@ -12,41 +12,31 @@ class NoAPITestCase(TestCase):
         """
         Nothing can be star imported from this package.
         """
-        import twisted_platform_support
-        self.assertEqual(twisted_platform_support.__all__, [])
+        import _twisted_platform_support
+        self.assertEqual(_twisted_platform_support.__all__, [])
 
     def test_sendmsg(self):
         """
         Sendmsg can be imported.
         """
-        from twisted_platform_support import _sendmsg
+        from _twisted_platform_support import _sendmsg
         _sendmsg
 
     if _PY3 or platform.isWindows():
         test_sendmsg.skip = "Not relevant on this platform."
 
-    def test_portmap(self):
-        """
-        Sendmsg can be imported.
-        """
-        from twisted_platform_support import _portmap
-        _portmap
-
-    if _PY3 or platform.isWindows():
-        test_portmap.skip = "Not relevant on this platform."
-
     def test_raiser(self):
         """
         Raiser can be imported.
         """
-        from twisted_platform_support import _raiser
+        from _twisted_platform_support import _raiser
         _raiser
 
     def test_iocp(self):
         """
         IOCP can be imported.
         """
-        from twisted_platform_support import _iocp
+        from _twisted_platform_support import _iocp
         _iocp
 
     if not platform.isWindows():

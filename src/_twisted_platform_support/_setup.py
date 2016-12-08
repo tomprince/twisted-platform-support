@@ -46,17 +46,17 @@ class ConditionalExtension(Extension):
         Extension.__init__(self, *args, **kwargs)
 
 
-_iocp_base = "src/twisted_platform_support/_iocp/iocpsupport/"
+_iocp_base = "src/_twisted_platform_support/_iocp/iocpsupport/"
 
 # The C extensions used for Twisted.
 _EXTENSIONS = [
     ConditionalExtension(
-        "twisted_platform_support._raiser",
-        sources=["src/twisted_platform_support/_raiser/raiser.c"],
+        "_twisted_platform_support._raiser",
+        sources=["src/_twisted_platform_support/_raiser/raiser.c"],
         condition=lambda _: _isCPython),
 
     ConditionalExtension(
-        "twisted_platform_support._iocp",
+        "_twisted_platform_support._iocp",
         sources=[
             _iocp_base + "iocpsupport.c",
             _iocp_base + "winsock_pointers.c",
@@ -65,8 +65,8 @@ _EXTENSIONS = [
         condition=lambda _: _isCPython and sys.platform == "win32"),
 
     ConditionalExtension(
-        "twisted_platform_support._sendmsg",
-        sources=["src/twisted_platform_support/_sendmsg.c"],
+        "_twisted_platform_support._sendmsg",
+        sources=["src/_twisted_platform_support/_sendmsg.c"],
         condition=lambda _: not _PY3 and sys.platform != "win32"),
 ]
 

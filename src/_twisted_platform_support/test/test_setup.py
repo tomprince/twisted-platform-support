@@ -10,8 +10,8 @@ import os
 from setuptools.dist import Distribution
 from twisted.trial.unittest import TestCase
 
-from twisted_platform_support import _setup
-from twisted_platform_support._setup import (
+from _twisted_platform_support import _setup
+from _twisted_platform_support._setup import (
     ConditionalExtension, getSetupArgs
 )
 
