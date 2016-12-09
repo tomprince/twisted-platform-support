@@ -32,6 +32,16 @@ class NoAPITestCase(TestCase):
         from _twisted_platform_support import _raiser
         _raiser
 
+    def test_portmap(self):
+        """
+        Sendmsg can be imported.
+        """
+        from _twisted_platform_support import _portmap
+        _portmap
+
+    if _PY3 or platform.isWindows():
+        test_portmap.skip = "Not relevant on this platform."
+
     def test_iocp(self):
         """
         IOCP can be imported.
