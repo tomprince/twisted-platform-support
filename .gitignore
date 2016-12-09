@@ -7,3 +7,4 @@ _trial_temp*
 .eggs
 *.so
 *.dll
+dist/
